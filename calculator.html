@@ -6,18 +6,23 @@
 
 function cube() {
 
-var num = document.getElementById("n1");
+    var num = document.getElementById("n1");
 
-num.value = Math.pow(num.value, 3);
+    num.value = Math.pow(num.value, 3);
 
 }
 
 function sin() {
 
-var num = document.getElementById("n1");
+    var num = document.getElementById("n1");
 
-num.value = Math.sin(num.value);
+    num.value = Math.sin(num.value);
+}
 
+function pow (n) {
+    var num = document.getElementById("n1");
+
+    num.value = Math.pow(num.value, n);
 }
 
 </script>
@@ -35,6 +40,8 @@ Number:
 <button onclick="cube()"> x^3 </button>
 
 <button onclick="sin()"> sin(x) </button>
+
+<button onclick="pow(4)"> x^4 </button>
 
 </body>
 
